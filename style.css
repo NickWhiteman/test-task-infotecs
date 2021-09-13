@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+* {
+    margin:0; 
+    padding:0;
+}
+
+body {
+    margin: 0 auto;
+}
+
+.body {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.displayBlock {
+    background-color: rgba(0, 0, 0, 0.322);
+}
+
+.table-display {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.table {
+    border-radius: 5px;
+    padding: 8px;
+    border-collapse: collapse;
+}
+
+.header-item {
+    height: 50px;
+    background-color: rgba(0, 40, 151, 0.788);
+    color: rgba(255, 255, 255, 0.753);
+}
+
+.item-table:hover {
+    background-color: rgba(40, 74, 167, 0.404);
+}
+
+.about-column {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.green {
+    background-color: green;
+}
+
+@keyframes  slideEdition{
+    from {
+        margin-left: 100%;
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+
+.edit-wrapper {
+    animation-duration: .5s;
+    animation-name: slideEdition;
+    height: 80%;
+    margin: 15px 25px 25px 25px;
+    display: grid;
+    grid-template-rows: 40px 1fr 1fr 1fr 1fr;
+}
+
+.edition-block {
+    animation-duration: .5s;
+    animation-name: slideEdition;
+    display: flex;
+    width: 350px;
+    margin-top: 50px;
+    margin-left: 100px;
+    border: 2px solid rgba(58, 56, 56, 0.222);
+    border-radius: 10px;
+    position: fixed;
+    background-color: white;
+}
+
+.close-edit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.close {
+    width: 40px;
+    height: 40px;
+}
+
+.form-field {
+    margin: 10px 0 10px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.form-field input {
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid rgba(21, 31, 88, 0.5);
+}
+
+.form-field textarea {
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid rgba(21, 31, 88, 0.5);
+}
+
+label {
+    color: gray;
+}
+
+.button-footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.save-button {
+    height: 35px;
+    width: 70px;
+    background-color: rgb(40, 74, 167);
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.cancel-button {
+    height: 35px;
+    width: 70px;
+    background-color: white;
+    color: grey;
+    border: none;
+}
+
+.num-buttons {
+    text-align: center;
+}
+
+.num-page {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: transparent;
+}
+
+.buttons-sort {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button-sort {
+    height: 40px;
+    width: 106px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(53, 102, 117);
+}
+
+.button-sort:active {
+    background-color: rgb(34, 69, 80);
+}
