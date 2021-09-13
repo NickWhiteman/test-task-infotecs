@@ -14,11 +14,16 @@ body {
 }
 
 .displayBlock {
-    background-color: rgba(0, 0, 0, 0.322);
+    background-color: rgba(0, 0, 0, 0.521);
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; 
+    height: 100%;
+    z-index: 1;
 }
 
 .table-display {
-    margin: 0 auto;
+    margin: 10px 10px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -30,6 +35,8 @@ body {
 }
 
 .header-item {
+    padding-left: 10px;
+    padding-right: 10px;
     height: 50px;
     background-color: rgba(0, 40, 151, 0.788);
     color: rgba(255, 255, 255, 0.753);
@@ -93,6 +100,7 @@ body {
     border-radius: 10px;
     position: fixed;
     background-color: white;
+    z-index: 2;
 }
 
 .close-edit {
@@ -124,6 +132,10 @@ body {
 .form-field textarea {
     height: 50px;
     width: 200px;
+    max-height: 50px;
+    max-width: 200px;
+    min-height: 50px;
+    min-width: 200px;
     border-radius: 5px;
     border: 1px solid rgba(21, 31, 88, 0.5);
 }
@@ -165,6 +177,10 @@ label {
     border-radius: 50px;
     border: none;
     background-color: transparent;
+}
+
+.num-page:active {
+    background-color: rgb(40, 74, 167);
 }
 
 .buttons-sort {
